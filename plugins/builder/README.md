@@ -1,8 +1,8 @@
 # Salesforce Builder Plugins
 
-This folder contains Claude Code plugins for building apps and agents on the Salesforce Platform. Plugins package skills with additional components such as agents, hooks, commands, MCP servers, and scripts. Each plugin includes the components needed for its workflows; see its source and documentation for details.
+This folder contains plugins for building apps and agents on the Salesforce Platform. Plugins package skills with additional components such as agents, hooks, commands, MCP servers, and scripts. Each plugin includes the components needed for its workflows; see its source and documentation for details.
 
-Start with the [Salesforce Development plugin README](salesforce-development/README.md) for prerequisites, installation, example prompts, and the full component inventory. The [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) covers installation, project and org setup, workflows, troubleshooting, and telemetry in Claude Code.
+Start with the [Salesforce Development plugin README](salesforce-development/README.md) for prerequisites, installation, example prompts, and the full component inventory. The [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) covers installation, project and org setup, workflows, troubleshooting, and telemetry in Claude Code and Codex. Choose the installation path for your client; component availability depends on its manifest.
 
 ## Install in Claude Code
 
@@ -22,6 +22,19 @@ To install a specialized plugin from this repository, add the Salesforce marketp
 ```
 
 Review each plugin's source and requirements before installing it. Some workflows require additional Salesforce products, licenses, or org configuration. For installation scopes, updates, and plugin management, see the [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins).
+
+## Install in Codex
+
+Use Salesforce Development 2.5.0 or later, Codex CLI 0.145.0 or later, and a POSIX host with Bash and Python 3.8 or later. Clone a release that contains the Codex manifests, then register its absolute checkout path and install the foundation plugin:
+
+```bash
+codex plugin marketplace add /path/to/sf-skills --json
+codex plugin add salesforce-development@salesforce --json
+```
+
+Start a new Codex session and review the plugin hooks with `/hooks`. Ask for workflows in plain language or choose them from the `$` skill list. Salesforce Development can recommend public companion plugins; review and approve each installation, then start a new session. See [Codex setup and limits](salesforce-development/README.md#codex-lifecycle-support).
+
+Claude Code agents and hooks aren't automatically carried over. Salesforce Test Drive has a limited Codex adapter whose complete workflows haven't been validated in a live Codex session. For other clients, see the [standalone skills setup](../../README.md#-usage).
 
 ## Plugin Catalog
 
@@ -43,6 +56,8 @@ The [Salesforce marketplace manifest](../../.claude-plugin/marketplace.json) lis
 | [Mobile Development](mobile-development/) | Salesforce Mobile SDK apps, authentication, offline storage, and native capabilities |
 | [Platform Observability](platform-observability/) | Configuring Salesforce tracing metadata and span ingestion |
 | [DX ISV Partner](dx-isv-partner/) | Managed-package analytics and partner-offer preferences |
+| [Education Cloud](education-cloud/README.md) | Academic calendars, course migration, institutional hierarchies, education domains, and student recruitment |
+| [Service Omni-Channel](service-omni/README.md) | Omni-Channel routing, queues, presence, agent capacity, and supervisor setup |
 | [Service Engagement](service-engagement/) | Service Cloud messaging, web chat, and digital engagement channels |
 | [Integration](integration/) | Connectivity, OAuth apps, Change Data Capture, and event subscriptions |
 | [Platform Lightning Widgets](platform-lightning-widgets/) | Lightning Types and Agentforce or MCP action widgets |
