@@ -32,9 +32,9 @@ codex plugin marketplace add /path/to/sf-skills --json
 codex plugin add salesforce-development@salesforce --json
 ```
 
-Start a new Codex session and review the plugin hooks with `/hooks`. Ask for workflows in plain language or choose them from the `$` skill list. Salesforce Development can recommend public companion plugins; review and approve each installation, then start a new session. See [Codex setup and limits](salesforce-development/README.md#codex-lifecycle-support).
+Start a new Codex session and review the plugin hooks with `/hooks`. Codex converts the plugin's commands into skills during installation. Ask for workflows in plain language or choose them from the `$` skill list. Salesforce Development can recommend public companion plugins; review and approve each installation, then start a new session. See [Codex setup and limits](salesforce-development/README.md#codex-lifecycle-support).
 
-Claude Code agents and hooks aren't automatically carried over. Salesforce Test Drive has a limited Codex adapter whose complete workflows haven't been validated in a live Codex session. For other clients, see the [standalone skills setup](../../README.md#-usage).
+Salesforce Development supplies Codex with skills-first development instructions; Claude Code agents and hooks aren't automatically carried over. [Salesforce Test Drive](salesforce-test-drive/README.md) is fully supported in Claude Code and Codex. For other clients, see the [standalone skills setup](../../README.md#-usage).
 
 ## Plugin Catalog
 
