@@ -1,3 +1,54 @@
+## [1.65.1](https://github.com/forcedotcom/sf-skills/compare/1.65.0...1.65.1) (2026-10-15)
+
+
+### Reverts
+
+* "Release 863 skills" public release changes @W-24535066@ ([#373](https://github.com/forcedotcom/sf-skills/issues/373)) ([dcdcb4a](https://github.com/forcedotcom/sf-skills/commit/dcdcb4a0be6eddd65da8f976941301010b7267f9))
+
+
+
+# [1.65.0](https://github.com/forcedotcom/sf-skills/compare/1.64.0...1.65.0) (2026-10-15)
+
+
+### Features
+
+* Release 863 skills (47 new, 816 updated, 1 removed) - headless360Mcp-only public @W-24535066@ ([47e2526](https://github.com/forcedotcom/sf-skills/commit/47e252633e6ac06b83e3cdda36e001c836f5e404))
+
+
+
+# [1.64.0](https://github.com/forcedotcom/sf-skills/compare/1.63.0...1.64.0) (2026-10-15)
+
+
+### Features
+
+* Release 236 skills (6 new, 230 updated, 3 demoted, 1 removed) - sf-skills public @W-24535066@ ([3673edc](https://github.com/forcedotcom/sf-skills/commit/3673edc8faeba8fa29d492f4b855dfeaa5344675))
+
+
+
+# [1.63.0](https://github.com/forcedotcom/sf-skills/compare/1.62.0...1.63.0) (2026-10-15)
+
+
+### Features
+
+* Add owner and string accessCheck to the 3 skills demoted in this release @W-24535066@ ([10e1256](https://github.com/forcedotcom/sf-skills/commit/10e1256cc7f14bcefec71f1987e81f285041a70d))
+* Plugins release 2.4.0 (promotion to main) @W-24472929@ ([4bbae5c](https://github.com/forcedotcom/sf-skills/commit/4bbae5c421e51b40e4169afa72c4496372a602a7))
+
+
+
+# [1.62.0](https://github.com/forcedotcom/sf-skills/compare/1.61.0...1.62.0) (2026-10-09)
+
+
+### Bug Fixes
+
+* correct license to Apache-2.0 and update package description @W-24438451@ ([#358](https://github.com/forcedotcom/sf-skills/issues/358)) ([e5164d9](https://github.com/forcedotcom/sf-skills/commit/e5164d94d7511c00fa02a5b8b60754b2361e178f))
+
+
+### Features
+
+* Release 154 skills (1 new, 153 updated) - sf-skills public @W-24467627@ ([d1fd46f](https://github.com/forcedotcom/sf-skills/commit/d1fd46ff0bbaebb69fda40cf5a9a3a43f0ca6af5))
+
+
+
 # [1.61.0](https://github.com/forcedotcom/sf-skills/compare/1.60.0...1.61.0) (2026-10-07)
 
 
