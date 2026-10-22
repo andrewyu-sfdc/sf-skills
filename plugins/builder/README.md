@@ -2,7 +2,9 @@
 
 This folder contains plugins for building apps and agents on the Salesforce Platform. Plugins package skills with additional components such as agents, hooks, commands, MCP servers, and scripts. Each plugin includes the components needed for its workflows; see its source and documentation for details.
 
-Start with the [Salesforce Development plugin README](salesforce-development/README.md) for prerequisites, installation, example prompts, and the full component inventory. The [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) covers installation, project and org setup, workflows, troubleshooting, and telemetry in Claude Code and Codex. Choose the installation path for your client; component availability depends on its manifest.
+Start with the [Salesforce Development plugin README](salesforce-development/README.md) for prerequisites, installation, example prompts, and the full component inventory. The [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) covers installation, project and org setup, workflows, troubleshooting, and telemetry. Use the plugin README for Codex-specific setup. Component availability depends on the coding agent and plugin manifest.
+
+Choose your coding agent: [Claude Code](#install-in-claude-code) or [Codex](#install-in-codex).
 
 ## Install in Claude Code
 
@@ -14,10 +16,18 @@ claude plugin install salesforce-development@claude-plugins-official
 
 Start a Claude Code session and run `/plugin` to verify installation. See the [Salesforce Development marketplace listing](https://claude.com/plugins/salesforce-development) for the official listing.
 
-To install a specialized plugin from this repository, add the Salesforce marketplace in Claude Code, then install the plugin by name. For example, to install the React development plugin:
+Marketplace versions can differ; check the installed version in `/plugin`. For the latest release
+published by Salesforce, add the Salesforce marketplace and install the foundation plugin:
 
 ```text
 /plugin marketplace add forcedotcom/sf-skills
+/plugin install salesforce-development@salesforce
+```
+
+If switching marketplaces, use `/plugin` to disable the previous copy so only one copy is enabled.
+To add a specialized plugin from the same marketplace, install it by name. For example, for React:
+
+```text
 /plugin install experience-react@salesforce
 ```
 
@@ -34,7 +44,7 @@ codex plugin add salesforce-development@salesforce --json
 
 Start a new Codex session and review the plugin hooks with `/hooks`. Codex converts the plugin's commands into skills during installation. Ask for workflows in plain language or choose them from the `$` skill list. Salesforce Development can recommend public companion plugins; review and approve each installation, then start a new session. See [Codex setup and limits](salesforce-development/README.md#codex-lifecycle-support).
 
-Salesforce Development supplies Codex with skills-first development instructions; Claude Code agents and hooks aren't automatically carried over. [Salesforce Test Drive](salesforce-test-drive/README.md) is fully supported in Claude Code and Codex. For other clients, see the [standalone skills setup](../../README.md#-usage).
+Salesforce Development supplies Codex with skills-first development instructions; Claude Code agents and hooks aren't automatically carried over. [Salesforce Test Drive](salesforce-test-drive/README.md) offers guided builds; its Codex adapter uses the shared engine with coding-agent-specific interaction and session handling. For other clients, see the [standalone skills setup](../../README.md#-usage).
 
 ## Plugin Catalog
 

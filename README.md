@@ -35,7 +35,7 @@ sf-skills/
 | **Tool** | **Usage** |
 |----------|-------------|
 | **Agentforce Vibes** | Skills are auto-installed and auto-updated |
-| **Claude Code — Salesforce Development plugin** | Follow the [Claude Code installation guide](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/install-salesforce-development.html#install-in-claude-code) for skills, guided workflows, and integrated tools |
+| **Claude Code — Salesforce Development plugin** | Follow the [Claude Code installation guide](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/install-salesforce-development.html) for skills, guided workflows, and integrated tools |
 | **Codex — Salesforce Development plugin (2.5.0+)** | Follow [Codex setup and requirements](plugins/builder/salesforce-development/README.md#codex-lifecycle-support); use a release containing the Codex manifests and Codex CLI 0.145.0 or later |
 | **OpenCode, Claude Code, Codex, Cursor, [more](https://agentskills.io/) — standalone skills** | `npx skills add forcedotcom/sf-skills` |
 
@@ -45,7 +45,7 @@ Plugins bundle skills with other components that the coding client installs and 
 
 - [Builder plugin catalog and setup](plugins/builder/README.md)
 - [Salesforce Development plugin README](plugins/builder/salesforce-development/README.md) — prerequisites, quick start, and component inventory
-- [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) — installation, project and org setup, workflows, and troubleshooting in Claude Code and Codex
+- [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) — installation, project and org setup, workflows, and troubleshooting; use the plugin README for Codex-specific setup
 - [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins) — plugin components and how plugins work
 
 Check the [plugin changelog](plugins/builder/salesforce-development/CHANGELOG.md) and installed version for release availability. Other clients, including Cursor, can use standalone skills where supported; full plugin support depends on the client and plugin manifest.
