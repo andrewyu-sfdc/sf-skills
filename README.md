@@ -4,6 +4,37 @@ This repository provides Salesforce agent skills, plugins, and sample apps for b
 
 The skills are contributed by Salesforce and the broader community. The skills library is optimized for Agentforce Vibes and can be used with any AI tool that supports skills. For guided Salesforce development, start with the [Salesforce Development plugin README](plugins/builder/salesforce-development/README.md) and the [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html).
 
+## See the development workflow
+
+Go from a natural-language request to an app deployed in Salesforce. These short demos
+show Salesforce Development 2.5.0 in a terminal, followed by the finished app.
+
+![Claude Code building and deploying a Salesforce Lightning app](docs/media/development-demos/claude-salesforce-development-2.5.0.gif)
+
+| Demo | Length | Watch or download |
+|---|---:|---|
+| Claude Code: Lightning app | 35 seconds | [GIF](docs/media/development-demos/claude-salesforce-development-2.5.0.gif) · [MP4](docs/media/development-demos/claude-salesforce-development-2.5.0.mp4) |
+| Codex CLI: Lightning app | 30 seconds | [GIF](docs/media/development-demos/codex-salesforce-development-2.5.0.gif) · [MP4](docs/media/development-demos/codex-salesforce-development-2.5.0.mp4) |
+| Claude Code: internal React app | 32 seconds | [GIF](docs/media/development-demos/claude-react-salesforce-development-2.5.0.gif) · [MP4](docs/media/development-demos/claude-react-salesforce-development-2.5.0.mp4) |
+
+The Codex Lightning demo also uses Experience LWC 0.3.0; the React demo uses
+Experience React 0.2.1. The clips combine real terminal excerpts with captured views
+of the deployed apps. Accelerated terminal sections are labeled. All Account data
+shown is fictional. See the [recording notes](docs/media/development-demos/README.md).
+
+<details>
+<summary>Preview Codex CLI and React</summary>
+
+### Codex CLI: Lightning app
+
+![Codex CLI building and deploying a Salesforce Lightning app](docs/media/development-demos/codex-salesforce-development-2.5.0.gif)
+
+### Claude Code: internal React app
+
+![Claude Code building and deploying an internal Salesforce React app](docs/media/development-demos/claude-react-salesforce-development-2.5.0.gif)
+
+</details>
+
 > ⚠️ **Expect frequent changes.** The Salesforce skills and plugins library is evolving rapidly as we refine patterns and incorporate feedback. Skills and plugins may be renamed, restructured, or removed between releases — they do not follow the same stability guarantees as GA platform APIs. If you’ve forked or synced the repository, be prepared for upstream changes that may conflict with local modifications. This repository is always the source of truth.
 
 ## 🗂️ Structure

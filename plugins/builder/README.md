@@ -6,6 +6,12 @@ Start with the [Salesforce Development plugin README](salesforce-development/REA
 
 Choose your coding agent: [Claude Code](#install-in-claude-code) or [Codex](#install-in-codex).
 
+## Watch a development demo
+
+See [Claude Code and Codex CLI build and deploy Lightning apps, plus a Claude Code
+React workflow](../../README.md#see-the-development-workflow). Each short demo has a
+looping GIF and an MP4 download. The gallery identifies the plugin versions used.
+
 ## Install in Claude Code
 
 Follow the [installation guide](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/install-salesforce-development.html) to review prerequisites and usage telemetry, then install Salesforce Development from the official Claude Plugin Marketplace. From a terminal, run:
