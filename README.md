@@ -1,13 +1,13 @@
 # Salesforce Skills and Plugins Library
 
-This repository provides Salesforce agent skills, plugins, and sample apps for building applications. It includes skills for Agentforce agents, Lightning apps, Flow, Apex, SOQL, Lightning Web Components (LWC), UI bundles, objects and fields, permission sets, and related areas. The [builder plugins](plugins/builder/README.md) package skills with additional capabilities such as agents, hooks, commands, and Model Context Protocol (MCP) servers. Each client loads the components supported by that plugin's manifest.
+This repository provides Salesforce agent skills, plugins, and sample apps for building applications. It includes skills for Agentforce agents, Lightning apps, Flow, Apex, SOQL, Lightning Web Components (LWC), UI bundles, objects and fields, permission sets, and related areas. The [builder plugins](plugins/builder/) package skills with additional capabilities such as agents, hooks, commands, and Model Context Protocol (MCP) servers. Each client loads the components supported by that plugin's manifest.
 
 The skills are contributed by Salesforce and the broader community. The skills library is optimized for Agentforce Vibes and can be used with any AI tool that supports skills. For guided Salesforce development, start with the [Salesforce Development plugin README](plugins/builder/salesforce-development/README.md) and the [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html).
 
 ## See the development workflow
 
 Go from a natural-language request to an app deployed in Salesforce. These short demos
-show Salesforce Development 2.5.0 in a terminal, followed by the finished app.
+were recorded with Salesforce Development 2.5.0 and show a terminal workflow followed by the finished app.
 
 ![Claude Code building and deploying a Salesforce Lightning app](docs/media/development-demos/claude-salesforce-development-2.5.0.gif)
 
@@ -45,7 +45,6 @@ sf-skills/
 │   └── marketplace.json  # Salesforce plugin marketplace catalog
 ├── plugins/
 │   └── builder/          # Plugins for Salesforce development
-│       ├── README.md     # Plugin catalog and setup guidance
 │       ├── salesforce-development/
 │       └── ...
 ├── skills/               # Directory-based executable workflows
@@ -67,14 +66,14 @@ sf-skills/
 |----------|-------------|
 | **Agentforce Vibes** | Skills are auto-installed and auto-updated |
 | **Claude Code — Salesforce Development plugin** | Follow the [Claude Code installation guide](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/install-salesforce-development.html) for skills, guided workflows, and integrated tools |
-| **Codex — Salesforce Development plugin (2.5.0+)** | Follow [Codex setup and requirements](plugins/builder/salesforce-development/README.md#codex-lifecycle-support); use a release containing the Codex manifests and Codex CLI 0.145.0 or later |
+| **Codex — Salesforce Development plugin** | Follow [Codex setup and requirements](plugins/builder/salesforce-development/README.md#codex-lifecycle-support); use a release containing the Codex manifests and Codex CLI 0.145.0 or later |
 | **OpenCode, Claude Code, Codex, Cursor, [more](https://agentskills.io/) — standalone skills** | `npx skills add forcedotcom/sf-skills` |
 
 ## 🔌 Plugins
 
 Plugins bundle skills with other components that the coding client installs and loads together. The Salesforce Development plugin provides shared workflows for building, testing, and deploying on the Salesforce Platform, with client-specific commands, hooks, and MCP configuration. Claude Code agents and hooks aren't automatically available in other clients. Specialized builder plugins add capabilities for areas such as Agentforce, code quality, LWC, and React development.
 
-- [Builder plugin catalog and setup](plugins/builder/README.md)
+- [Salesforce marketplace manifest](.claude-plugin/marketplace.json) — available plugins, descriptions, and source paths
 - [Salesforce Development plugin README](plugins/builder/salesforce-development/README.md) — prerequisites, quick start, and component inventory
 - [Salesforce Development plugin documentation](https://developer.salesforce.com/docs/platform/salesforce-skills-plugins/guide/salesforce-development-overview.html) — installation, project and org setup, workflows, and troubleshooting; use the plugin README for Codex-specific setup
 - [Claude Code plugin documentation](https://code.claude.com/docs/en/plugins) — plugin components and how plugins work
